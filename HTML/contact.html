@@ -3,238 +3,200 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Контакты — MERIDIAN Металлообработка</title>
+  <title>Контакты — СТАРТ Металлообработка</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../css/base.css"/>
   <link rel="stylesheet" href="../css/contact.css"/>
 </head>
 <body>
-  <div class="noise"></div>
+<div class="noise"></div>
 
-  <nav class="nav" id="nav">
-    <a href="../index.html" class="logo">
-      <span class="logo-mark">M</span>
-      <div class="logo-wrap">
-        <span class="logo-text">MERIDIAN</span>
-        <span class="logo-sub">Металлообработка</span>
-      </div>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html"  class="nav-link">Главная</a></li>
-      <li><a href="services.html"  class="nav-link">Услуги</a></li>
-      <li><a href="contact.html"   class="nav-link active">Контакты</a></li>
-    </ul>
-    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="nav-cta">Магазин Ozon ↗</a>
-    <button class="burger" id="burger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<nav class="nav" id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../logo.png" alt="СТАРТ" class="logo-img"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html"  class="nav-link">Главная</a></li>
+    <li><a href="services.html"  class="nav-link">Услуги</a></li>
+    <li><a href="contact.html"   class="nav-link active">Контакты</a></li>
+  </ul>
+  <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon" style="padding:10px 20px;font-size:12px;">Магазин Ozon →</a>
+  <button class="burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
 
-  <div class="nav-drawer" id="navDrawer">
-    <a href="../index.html"  class="nav-link" onclick="closeMenu()">Главная</a>
-    <a href="services.html"  class="nav-link" onclick="closeMenu()">Услуги</a>
-    <a href="contact.html"   class="nav-link active" onclick="closeMenu()">Контакты</a>
-    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon">Магазин Ozon ↗</a>
+<div class="nav-drawer" id="navDrawer">
+  <a href="../index.html"  class="nav-link" onclick="closeMenu()">Главная</a>
+  <a href="services.html"  class="nav-link" onclick="closeMenu()">Услуги</a>
+  <a href="contact.html"   class="nav-link active" onclick="closeMenu()">Контакты</a>
+  <div class="drawer-btns">
+    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon btn-full">Магазин Ozon →</a>
   </div>
+</div>
 
-  <section class="inner-hero">
-    <div class="hero-visual">
-      <div class="hero-circle c2"></div>
-      <div class="hero-circle c3"></div>
+<section class="inner-hero">
+  <div class="hero-visual">
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="container inner-hero-body">
+    <div class="breadcrumb">
+      <span>MERIDIAN</span>
+      <span class="breadcrumb-sep">/</span>
+      <span class="bc-active">Контакты</span>
     </div>
-    <div class="container inner-hero-body">
-      <div class="breadcrumb">
-        <span class="sec-num">MERIDIAN</span>
-        <span class="sep-slash">/</span>
-        <span>Контакты</span>
-      </div>
-      <h1 class="inner-hero-title">
-        Давайте<br/><em>поговорим</em>
-      </h1>
-    </div>
-  </section>
+    <h1 class="inner-hero-title">
+      Свяжитесь
+      <em>с нами</em>
+    </h1>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="container contact-grid">
+<section class="section">
+  <div class="container contact-wrap">
 
-      <!-- LEFT -->
-      <div>
-        <p class="contact-intro">
-          Пришлите чертёж, эскиз или опишите задачу —
-          рассчитаем стоимость и сроки в течение 1 рабочего дня.
-        </p>
+    <!-- LEFT -->
+    <div>
+      <p class="contact-intro">Пришлите чертёж или опишите задачу — рассчитаем стоимость и&nbsp;сроки за&nbsp;1&nbsp;рабочий день.</p>
 
-        <div class="contact-list">
-          <div class="contact-row">
-            <div class="contact-row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .07h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div>
-              <span class="contact-row-label">Телефон</span>
-              <a href="tel:+70000000000" class="contact-row-val">+7 (000) 000-00-00</a>
-            </div>
+      <div class="contact-rows">
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           </div>
-          <div class="contact-row">
-            <div class="contact-row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <span class="contact-row-label">Email</span>
-              <a href="mailto:info@meridian.ru" class="contact-row-val">info@meridian.ru</a>
-            </div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </div>
-            <div>
-              <span class="contact-row-label">Telegram</span>
-              <a href="https://t.me/meridian" target="_blank" rel="noopener" class="contact-row-val">@meridian</a>
-            </div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-            </div>
-            <div>
-              <span class="contact-row-label">Режим работы</span>
-              <span class="contact-row-val">Пн–Пт: 9:00–18:00</span>
-            </div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-row-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <span class="contact-row-label">Адрес</span>
-              <span class="contact-row-val">г. Город, ул. Производственная, 1</span>
-            </div>
+          <div>
+            <span class="contact-row-label">Телефон</span>
+            <a href="tel:+70000000000" class="contact-row-val">+7 (000) 000-00-00</a>
           </div>
         </div>
-
-        <div class="contact-ozon">
-          <div class="contact-ozon-head">
-            <span class="ozon-badge">OZON</span>
-            <span>Наш магазин</span>
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
-          <p>Готовые металлические изделия из нашего ассортимента — доступны к заказу прямо сейчас.</p>
-          <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon btn-full-w">
-            Перейти на Ozon →
-          </a>
+          <div>
+            <span class="contact-row-label">Email</span>
+            <a href="mailto:info@meridian.ru" class="contact-row-val">info@meridian.ru</a>
+          </div>
         </div>
-
-        <div class="contact-avail">
-          <div class="avail-dot"></div>
-          <span>Принимаем новые заказы</span>
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div>
+            <span class="contact-row-label">Telegram</span>
+            <a href="https://t.me/meridian" target="_blank" rel="noopener" class="contact-row-val">@meridian</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <div>
+            <span class="contact-row-label">Режим работы</span>
+            <span class="contact-row-val">Пн–Пт: 9:00–18:00</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <span class="contact-row-label">Адрес</span>
+            <span class="contact-row-val">г. Город, ул. Производственная, 1</span>
+          </div>
         </div>
       </div>
 
-      <!-- FORM -->
-      <div class="contact-form-wrap">
-        <h3 class="contact-form-title">Заявка на <em>расчёт</em></h3>
-        <form class="form" onsubmit="handleSubmit(event)">
-          <div class="form-duo">
-            <div class="field">
-              <label>Имя *</label>
-              <input type="text" placeholder="Ваше имя" required/>
-            </div>
-            <div class="field">
-              <label>Компания</label>
-              <input type="text" placeholder="Организация (если есть)"/>
-            </div>
-          </div>
-          <div class="form-duo">
-            <div class="field">
-              <label>Телефон *</label>
-              <input type="tel" placeholder="+7 (___) ___-__-__" required/>
-            </div>
-            <div class="field">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.ru"/>
-            </div>
-          </div>
-
-          <div class="field">
-            <label>Нужные услуги</label>
-            <div class="svc-checks" id="svcChecks">
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Лазерная резка</span>
-              </label>
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Гибка металла</span>
-              </label>
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Порошковая покраска</span>
-              </label>
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Сварка (полуавтомат)</span>
-              </label>
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Аргонодуговая сварка</span>
-              </label>
-              <label class="svc-check">
-                <input type="checkbox"/>
-                <span class="svc-check-box"><svg viewBox="0 0 10 8" fill="none" stroke="#fff" stroke-width="1.5"><polyline points="1,4 3.5,6.5 9,1"/></svg></span>
-                <span>Отвёрточная сборка</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label>Количество</label>
-            <select>
-              <option value="">Выберите количество...</option>
-              <option>1–10 штук (единичный заказ)</option>
-              <option>10–100 штук (мелкая серия)</option>
-              <option>100–1000 штук (серия)</option>
-              <option>более 1000 штук</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label>Описание задачи *</label>
-            <textarea rows="5" placeholder="Опишите что нужно сделать. Если есть чертёж — укажите, мы свяжемся для его получения." required></textarea>
-          </div>
-
-          <button type="submit" class="btn-solid btn-full-w">
-            Отправить заявку →
-          </button>
-          <div class="form-ok" id="formOk">
-            ✓ Заявка принята — свяжемся в течение 1 рабочего дня
-          </div>
-        </form>
+      <!-- OZON -->
+      <div class="contact-ozon">
+        <div class="contact-ozon-head">
+          <span class="ozon-logobadge">OZON</span>
+          <span>Наш магазин</span>
+        </div>
+        <p>Типовые металлические изделия — доступны к заказу без ТЗ и расчёта.</p>
+        <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon btn-full">
+          Перейти на Ozon →
+        </a>
       </div>
 
+      <div class="contact-avail">
+        <div class="avail-dot"></div>
+        <span>Принимаем новые заказы</span>
+      </div>
     </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
+    <!-- FORM -->
+    <div class="form-wrap">
+      <h3>Заявка на расчёт</h3>
+      <form class="form" onsubmit="handleSubmit(event)">
+        <div class="form-duo">
+          <div class="field"><label>Имя *</label><input type="text" placeholder="Ваше имя" required/></div>
+          <div class="field"><label>Компания</label><input type="text" placeholder="Организация"/></div>
+        </div>
+        <div class="form-duo">
+          <div class="field"><label>Телефон *</label><input type="tel" placeholder="+7 (___) ___-__-__" required/></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="your@email.ru"/></div>
+        </div>
+
+        <div class="field">
+          <label>Нужные услуги</label>
+          <div class="svc-checks" id="svcChecks">
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Лазерная резка</span></label>
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Гибка металла</span></label>
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Отвёрточная сборка</span></label>
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Порошковая покраска</span></label>
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Сварка MIG/MAG</span></label>
+            <label class="svc-check"><input type="checkbox"/><span class="check-box"></span><span>Аргонодуговая TIG</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Количество</label>
+          <select>
+            <option value="">Выберите количество...</option>
+            <option>1–10 штук (единичный заказ)</option>
+            <option>10–100 штук (мелкая серия)</option>
+            <option>100–1000 штук</option>
+            <option>более 1000 штук</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Описание задачи *</label>
+          <textarea rows="5" placeholder="Опишите что нужно сделать. Если есть чертёж — укажите, мы свяжемся для его получения." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-solid btn-full" style="padding:16px;">
+          Отправить заявку →
+        </button>
+        <div class="form-ok" id="formOk">
+          ✓ Заявка принята! Свяжемся в течение 1 рабочего дня
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <span class="logo-mark">M</span>
-        <span>MERIDIAN</span>
+        <a href="../index.html" class="logo">
+    <img src="../logo.png" alt="СТАРТ" class="logo-img"/>
+  </a>
+        <p>Производство металлических деталей под заказ. Лазерная резка, гибка, сварка, порошковая покраска и сборка.</p>
       </div>
-      <nav class="footer-nav">
-        <a href="../index.html">Главная</a>
-        <a href="services.html">Услуги</a>
-        <a href="contact.html">Контакты</a>
-        <a href="https://www.ozon.ru" target="_blank" rel="noopener">Магазин Ozon</a>
-      </nav>
-      <p class="footer-copy">© 2024 MERIDIAN</p>
+      <div class="footer-col"><h5>Навигация</h5><ul><li><a href="../index.html">Главная</a></li><li><a href="services.html">Услуги</a></li><li><a href="contact.html">Контакты</a></li><li><a href="https://www.ozon.ru" target="_blank">Магазин Ozon</a></li></ul></div>
+      <div class="footer-col"><h5>Контакты</h5><ul><li><span>+7 (000) 000-00-00</span></li><li><span>info@meridian.ru</span></li><li><span>Пн–Пт: 9:00–18:00</span></li></ul></div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 СТАРТ. Все права защищены.</p>
+      <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="footer-ozon">Мы на Ozon →</a>
+    </div>
+  </div>
+</footer>
 
-  <script src="../js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

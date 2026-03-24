@@ -216,19 +216,18 @@ img { max-width: 100%; display: block; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-shrink: 0;
 }
 
-.logo-mark {
-  width: 34px; height: 34px;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  mix-blend-mode: lighten;
 }
 
-.logo-mark svg { width: 18px; height: 18px; color: #08090c; }
-
+/* Fallback-текст (если картинка не загрузится) */
 .logo-name {
   font-family: var(--ff-cond);
   font-size: 15px;
