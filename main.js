@@ -1,7 +1,5 @@
 /* =============================================
    MAIN.JS
-   index.html  → js/main.js
-   html/*.html → ../js/main.js
    ============================================= */
 
 /* ─── NAV SCROLL ─────────────────────────────── */
@@ -25,7 +23,6 @@ function closeMenu() {
   document.body.style.overflow = '';
 }
 
-/* Close on outside click */
 document.addEventListener('click', e => {
   const drawer = document.getElementById('navDrawer');
   const burger = document.getElementById('burger');
@@ -42,18 +39,15 @@ function initReveal() {
   if (!els.length) return;
 
   const io = new IntersectionObserver(entries => {
-    entries.forEach((entry, idx) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // stagger siblings
         const siblings = [...entry.target.parentElement.querySelectorAll('.reveal:not(.in)')];
         const delay = siblings.indexOf(entry.target);
-        setTimeout(() => {
-          entry.target.classList.add('in');
-        }, Math.min(delay * 80, 320));
+        setTimeout(() => entry.target.classList.add('in'), Math.min(delay * 90, 360));
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
   els.forEach(el => io.observe(el));
 }
@@ -65,8 +59,7 @@ function animCount(el, target, duration = 1400) {
   const step = ts => {
     if (!start) start = ts;
     const p = Math.min((ts - start) / duration, 1);
-    const val = Math.floor((1 - Math.pow(1 - p, 3)) * target);
-    el.textContent = val + suffix;
+    el.textContent = Math.floor((1 - Math.pow(1 - p, 3)) * target) + suffix;
     if (p < 1) requestAnimationFrame(step);
     else el.textContent = target + suffix;
   };
@@ -78,10 +71,7 @@ function initCounters() {
   if (!els.length) return;
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        animCount(e.target, +e.target.dataset.target);
-        io.unobserve(e.target);
-      }
+      if (e.isIntersecting) { animCount(e.target, +e.target.dataset.target); io.unobserve(e.target); }
     });
   }, { threshold: 0.5 });
   els.forEach(el => io.observe(el));
@@ -92,14 +82,11 @@ function initCheckboxes() {
   document.querySelectorAll('.svc-check').forEach(label => {
     const cb = label.querySelector('input[type="checkbox"]');
     if (!cb) return;
-    const toggle = () => label.classList.toggle('checked', cb.checked);
+    const toggle = () => label.classList.toggle('on', cb.checked);
     cb.addEventListener('change', toggle);
     label.addEventListener('click', e => {
-      // prevent double-fire on label click
-      if (e.target === label || e.target.classList.contains('svc-check-box') || e.target.tagName === 'SPAN') {
-        cb.checked = !cb.checked;
-        toggle();
-        e.preventDefault();
+      if (e.target === label || !cb.contains(e.target)) {
+        cb.checked = !cb.checked; toggle(); e.preventDefault();
       }
     });
   });
@@ -111,25 +98,21 @@ function handleSubmit(e) {
   const btn  = e.target.querySelector('button[type="submit"]');
   const ok   = document.getElementById('formOk');
   const orig = btn.innerHTML;
-
   btn.textContent = 'Отправляем…';
   btn.disabled = true;
-
-  // Simulate send (replace with real fetch later)
   setTimeout(() => {
     btn.innerHTML = orig;
     btn.disabled  = false;
     ok?.classList.add('show');
     e.target.reset();
-    document.querySelectorAll('.svc-check').forEach(l => l.classList.remove('checked'));
+    document.querySelectorAll('.svc-check').forEach(l => l.classList.remove('on'));
     setTimeout(() => ok?.classList.remove('show'), 6000);
   }, 1200);
 }
 
 /* ─── PHONE MASK ─────────────────────────────── */
 function initPhoneMask() {
-  const phoneInputs = document.querySelectorAll('input[type="tel"]');
-  phoneInputs.forEach(input => {
+  document.querySelectorAll('input[type="tel"]').forEach(input => {
     input.addEventListener('input', function () {
       let val = this.value.replace(/\D/g, '');
       if (val.startsWith('8')) val = '7' + val.slice(1);
@@ -149,10 +132,50 @@ function initPhoneMask() {
   });
 }
 
+/* ─── LIGHTBOX ───────────────────────────────── */
+function initLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const closeBtn = document.getElementById('lightboxClose');
+  if (!lightbox) return;
+
+  // Открываем при клике на карточку
+  document.querySelectorAll('.work-img-wrap').forEach(wrap => {
+    wrap.addEventListener('click', () => {
+      const img = wrap.querySelector('img');
+      if (!img || !img.src) return;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Закрываем по кнопке
+  closeBtn?.addEventListener('click', closeLightbox);
+
+  // Закрываем по клику на фон
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Закрываем по Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { lightboxImg.src = ''; }, 300);
+  }
+}
+
 /* ─── INIT ───────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initCounters();
   initCheckboxes();
   initPhoneMask();
+  initLightbox();
 });

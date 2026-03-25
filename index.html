@@ -18,13 +18,11 @@
     <img src="logo.png" alt="СТАРТ" class="logo-img"/>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html"         class="nav-link active">Главная</a></li>
+    <li><a href="index.html"    class="nav-link active">Главная</a></li>
     <li><a href="services.html" class="nav-link">Услуги</a></li>
+    <li><a href="works.html"    class="nav-link">Примеры</a></li>
     <li><a href="contact.html"  class="nav-link">Контакты</a></li>
   </ul>
-  <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon" style="padding:10px 20px;font-size:12px;">
-    Магазин Ozon →
-  </a>
   <button class="burger" id="burger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
@@ -32,11 +30,11 @@
 
 <!-- MOBILE DRAWER -->
 <div class="nav-drawer" id="navDrawer">
-  <a href="index.html"         class="nav-link active" onclick="closeMenu()">Главная</a>
+  <a href="index.html"    class="nav-link active" onclick="closeMenu()">Главная</a>
   <a href="services.html" class="nav-link"        onclick="closeMenu()">Услуги</a>
+  <a href="works.html"    class="nav-link"        onclick="closeMenu()">Примеры</a>
   <a href="contact.html"  class="nav-link"        onclick="closeMenu()">Контакты</a>
   <div class="drawer-btns">
-    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon btn-full">Магазин Ozon →</a>
     <a href="contact.html" class="btn-solid btn-full" onclick="closeMenu()">Оставить заявку</a>
   </div>
 </div>
@@ -73,60 +71,31 @@
       <div class="hero-actions">
         <a href="contact.html"  class="btn-solid">Оставить заявку</a>
         <a href="services.html" class="btn-outline">Услуги →</a>
-        <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon">Ozon</a>
       </div>
     </div>
   </div>
 
-  <div class="hero-stats">
-    <div class="hero-stat">
-      <span class="hero-stat-n" data-target="500">0</span>
-      <span class="hero-stat-l">Выполненных заказов</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-n" data-target="8">0</span>
-      <span class="hero-stat-l">Лет на рынке</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-n" data-target="6">0</span>
-      <span class="hero-stat-l">Видов обработки</span>
-    </div>
-    <div class="hero-stat">
-      <span class="hero-stat-n" data-target="1">0</span>
-      <span class="hero-stat-l">День — срок расчёта</span>
-    </div>
-  </div>
 </section>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker">
-    <span>Лазерная резка</span><span class="sep">·</span>
-    <span>Гибка металла</span><span class="sep">·</span>
-    <span>Сварка MIG/MAG</span><span class="sep">·</span>
-    <span>Аргонодуговая TIG</span><span class="sep">·</span>
-    <span>Порошковая покраска</span><span class="sep">·</span>
-    <span>Отвёрточная сборка</span><span class="sep">·</span>
-    <span>Лазерная резка</span><span class="sep">·</span>
-    <span>Гибка металла</span><span class="sep">·</span>
-    <span>Сварка MIG/MAG</span><span class="sep">·</span>
-    <span>Аргонодуговая TIG</span><span class="sep">·</span>
-    <span>Порошковая покраска</span><span class="sep">·</span>
-    <span>Отвёрточная сборка</span><span class="sep">·</span>
-  </div>
-</div>
-
-<!-- OZON BANNER -->
-<div class="ozon-banner">
-  <div class="container ozon-inner">
-    <div class="ozon-text">
-      <h3>Готовые изделия — на маркетплейсе</h3>
-      <p>Типовые детали из нашего ассортимента доступны прямо сейчас</p>
+  <div class="ticker-track">
+    <div class="ticker-set" aria-hidden="true">
+      <span>Лазерная резка</span><span class="sep">·</span>
+      <span>Гибка металла</span><span class="sep">·</span>
+      <span>Сварка MIG/MAG</span><span class="sep">·</span>
+      <span>Аргонодуговая TIG</span><span class="sep">·</span>
+      <span>Порошковая покраска</span><span class="sep">·</span>
+      <span>Отвёрточная сборка</span><span class="sep">·</span>
     </div>
-    <span class="ozon-logotype">OZON</span>
-    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon">
-      Перейти в магазин →
-    </a>
+    <div class="ticker-set" aria-hidden="true">
+      <span>Лазерная резка</span><span class="sep">·</span>
+      <span>Гибка металла</span><span class="sep">·</span>
+      <span>Сварка MIG/MAG</span><span class="sep">·</span>
+      <span>Аргонодуговая TIG</span><span class="sep">·</span>
+      <span>Порошковая покраска</span><span class="sep">·</span>
+      <span>Отвёрточная сборка</span><span class="sep">·</span>
+    </div>
   </div>
 </div>
 
@@ -150,7 +119,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- WHY -->
 <section class="section">
@@ -178,6 +146,10 @@
       <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
       <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
       <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
+      <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
+      <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
+      <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
+      <span>Отправьте нам чертёж</span><span class="mc-dot">✦</span>
     </div>
   </a>
 </section>
@@ -188,8 +160,8 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-    <img src="logo.png" alt="СТАРТ" class="logo-img"/>
-  </a>
+          <img src="logo.png" alt="СТАРТ" class="logo-img"/>
+        </a>
         <p>Производство металлических деталей под заказ. Лазерная резка, гибка, сварка, порошковая покраска и сборка.</p>
       </div>
       <div class="footer-col">
@@ -197,8 +169,8 @@
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="services.html">Услуги</a></li>
+          <li><a href="works.html">Примеры работ</a></li>
           <li><a href="contact.html">Контакты</a></li>
-          <li><a href="https://www.ozon.ru" target="_blank" rel="noopener">Магазин Ozon</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -212,7 +184,6 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2024 СТАРТ. Все права защищены.</p>
-      <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="footer-ozon">Мы на Ozon →</a>
     </div>
   </div>
 </footer>

@@ -17,20 +17,20 @@
     <img src="logo.png" alt="СТАРТ" class="logo-img"/>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html"  class="nav-link">Главная</a></li>
-    <li><a href="services.html"  class="nav-link active">Услуги</a></li>
-    <li><a href="contact.html"   class="nav-link">Контакты</a></li>
+    <li><a href="index.html"    class="nav-link">Главная</a></li>
+    <li><a href="services.html" class="nav-link active">Услуги</a></li>
+    <li><a href="works.html"    class="nav-link">Примеры</a></li>
+    <li><a href="contact.html"  class="nav-link">Контакты</a></li>
   </ul>
-  <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon" style="padding:10px 20px;font-size:12px;">Магазин Ozon →</a>
   <button class="burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="nav-drawer" id="navDrawer">
-  <a href="index.html"  class="nav-link" onclick="closeMenu()">Главная</a>
-  <a href="services.html"  class="nav-link active" onclick="closeMenu()">Услуги</a>
-  <a href="contact.html"   class="nav-link" onclick="closeMenu()">Контакты</a>
+  <a href="index.html"    class="nav-link" onclick="closeMenu()">Главная</a>
+  <a href="services.html" class="nav-link active" onclick="closeMenu()">Услуги</a>
+  <a href="works.html"    class="nav-link" onclick="closeMenu()">Примеры</a>
+  <a href="contact.html"  class="nav-link" onclick="closeMenu()">Контакты</a>
   <div class="drawer-btns">
-    <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="btn-ozon btn-full">Магазин Ozon →</a>
     <a href="contact.html" class="btn-solid btn-full" onclick="closeMenu()">Оставить заявку</a>
   </div>
 </div>
@@ -43,7 +43,7 @@
   </div>
   <div class="container inner-hero-body">
     <div class="breadcrumb">
-      <span>MERIDIAN</span>
+      <span>СТАРТ</span>
       <span class="breadcrumb-sep">/</span>
       <span class="bc-active">Услуги</span>
     </div>
@@ -54,7 +54,7 @@
   </div>
 </section>
 
-<!-- 6 SERVICES CARDS -->
+<!-- 6 SERVICES -->
 <section class="section">
   <div class="container">
     <div class="sec-head">
@@ -63,114 +63,174 @@
         <span class="sec-tag">Полный цикл производства</span>
       </div>
     </div>
-    <div class="svc-cards">
 
-      <div class="svc-card reveal" id="laser">
-        <span class="svc-card-num">01</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <line x1="5" y1="12" x2="19" y2="12"/>
-            <polyline points="12,5 19,12 12,19"/>
-          </svg>
+    <div class="svc-list">
+
+      <div class="svc-detail reveal" id="laser">
+        <div class="svc-detail-num">01</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12,5 19,12 12,19"/>
+              </svg>
+            </div>
+            <h3>Лазерная резка</h3>
+          </div>
+          <p>Точная фигурная резка листового металла оптоволоконным лазером. Допуски от ±0.1 мм. Обрабатываем сталь, нержавейку и алюминий толщиной до 20 мм.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Сталь до 20 мм</span>
+            <span class="svc-tag">Нержавейка до 12 мм</span>
+            <span class="svc-tag">Алюминий до 10 мм</span>
+            <span class="svc-tag">Допуск ±0.1 мм</span>
+            <span class="svc-tag">DXF / DWG / PDF</span>
+          </div>
         </div>
-        <h3>Лазерная резка</h3>
-        <p>Точная фигурная резка листового металла оптоволоконным лазером. Допуски от ±0.1 мм. Обрабатываем сталь, нержавейку и алюминий толщиной до 20 мм.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Сталь до 20 мм</span>
-          <span class="svc-tag">Нержавейка до 12 мм</span>
-          <span class="svc-tag">Алюминий до 10 мм</span>
-          <span class="svc-tag">Допуск ±0.1 мм</span>
-          <span class="svc-tag">DXF / DWG / PDF</span>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+            <span>Фото</span>
+          </div>
         </div>
       </div>
 
-      <div class="svc-card reveal" id="bending">
-        <span class="svc-card-num">02</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M4 6 L4 18 Q4 20 6 20 L20 20"/>
-            <polyline points="14,15 20,20 14,25"/>
-          </svg>
+      <div class="svc-detail reveal" id="bending">
+        <div class="svc-detail-num">02</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 6 L4 18 Q4 20 6 20 L20 20"/>
+              </svg>
+            </div>
+            <h3>Гибка листового металла</h3>
+          </div>
+          <p>Листогибочный пресс с рабочей длиной до 3000 мм. Гибка под любым углом — от простых П-образных профилей до сложных многоуровневых форм. Серийность от 1 детали.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Длина до 3000 мм</span>
+            <span class="svc-tag">Толщина 0.5–12 мм</span>
+            <span class="svc-tag">Любой угол</span>
+            <span class="svc-tag">Сложные профили</span>
+          </div>
         </div>
-        <h3>Гибка листового металла</h3>
-        <p>Листогибочный пресс с рабочей длиной до 3000 мм. Гибка под любым углом — от простых П-образных профилей до сложных многоуровневых форм. Серийность от 1 детали.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Длина до 3000 мм</span>
-          <span class="svc-tag">Толщина 0.5–12 мм</span>
-          <span class="svc-tag">Любой угол</span>
-          <span class="svc-tag">Сложные профили</span>
-        </div>
-      </div>
-
-      <div class="svc-card reveal" id="assembly">
-        <span class="svc-card-num">03</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
-          </svg>
-        </div>
-        <h3>Отвёрточная сборка</h3>
-        <p>Механическая сборка изделий из металлических компонентов. Установка крепежа, прокладок, резьбовых вставок. Упаковка и маркировка по вашему ТЗ.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">По вашим чертежам</span>
-          <span class="svc-tag">Комплектация крепежом</span>
-          <span class="svc-tag">Упаковка и маркировка</span>
-          <span class="svc-tag">Серийное производство</span>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6L4 18Q4 20 6 20L20 20"/></svg>
+            <span>Фото</span>
+          </div>
         </div>
       </div>
 
-      <div class="svc-card reveal" id="painting">
-        <span class="svc-card-num">04</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/>
-            <path d="M12 8v8M8 12h8"/>
-          </svg>
+      <div class="svc-detail reveal" id="assembly">
+        <div class="svc-detail-num">03</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+              </svg>
+            </div>
+            <h3>Отвёрточная сборка</h3>
+          </div>
+          <p>Механическая сборка изделий из металлических компонентов. Установка крепежа, прокладок, резьбовых вставок. Упаковка и маркировка по вашему ТЗ.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">По вашим чертежам</span>
+            <span class="svc-tag">Комплектация крепежом</span>
+            <span class="svc-tag">Упаковка и маркировка</span>
+            <span class="svc-tag">Серийное производство</span>
+          </div>
         </div>
-        <h3>Порошковая покраска</h3>
-        <p>Электростатическое нанесение порошкового покрытия с полимеризацией в печи. Любой цвет по каталогу RAL. Стойкость к коррозии, химии и механическим повреждениям.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Все цвета RAL</span>
-          <span class="svc-tag">Матовая / глянцевая</span>
-          <span class="svc-tag">Антикоррозийная</span>
-          <span class="svc-tag">Толщина 60–120 мкм</span>
-        </div>
-      </div>
-
-      <div class="svc-card reveal" id="mig">
-        <span class="svc-card-num">05</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z"/>
-          </svg>
-        </div>
-        <h3>Сварка полуавтоматом</h3>
-        <p>MIG/MAG сварка в среде защитного газа — стальные конструкции, рамы, корпуса, ёмкости. Сварные швы по ГОСТ. Высокая производительность при серийном выпуске.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Сталь / Нержавейка</span>
-          <span class="svc-tag">MIG / MAG</span>
-          <span class="svc-tag">Швы по ГОСТ</span>
-          <span class="svc-tag">Конструкции любой сложности</span>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/></svg>
+            <span>Фото</span>
+          </div>
         </div>
       </div>
 
-      <div class="svc-card reveal" id="tig">
-        <span class="svc-card-num">06</span>
-        <div class="svc-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22,4 12,14.01 9,11.01"/>
-          </svg>
+      <div class="svc-detail reveal" id="painting">
+        <div class="svc-detail-num">04</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </div>
+            <h3>Порошковая покраска</h3>
+          </div>
+          <p>Электростатическое нанесение порошкового покрытия с полимеризацией в печи. Любой цвет по каталогу RAL. Стойкость к коррозии, химии и механическим повреждениям.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Все цвета RAL</span>
+            <span class="svc-tag">Матовая / глянцевая</span>
+            <span class="svc-tag">Антикоррозийная</span>
+            <span class="svc-tag">Толщина 60–120 мкм</span>
+          </div>
         </div>
-        <h3>Аргонодуговая сварка</h3>
-        <p>TIG-сварка алюминия, нержавейки, меди и титана. Чистый шов без пор и брызг. Идеально для тонколистового металла и деталей с высокими требованиями к внешнему виду.</p>
-        <div class="svc-tags">
-          <span class="svc-tag">Алюминий</span>
-          <span class="svc-tag">Нержавейка</span>
-          <span class="svc-tag">Медь / Титан</span>
-          <span class="svc-tag">TIG / Аргон</span>
-          <span class="svc-tag">Тонколистовой металл</span>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+            <span>Фото</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-detail reveal" id="mig">
+        <div class="svc-detail-num">05</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26Z"/>
+              </svg>
+            </div>
+            <h3>Сварка полуавтоматом</h3>
+          </div>
+          <p>MIG/MAG сварка в среде защитного газа — стальные конструкции, рамы, корпуса, ёмкости. Сварные швы по ГОСТ. Высокая производительность при серийном выпуске.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Сталь / Нержавейка</span>
+            <span class="svc-tag">MIG / MAG</span>
+            <span class="svc-tag">Швы по ГОСТ</span>
+            <span class="svc-tag">Конструкции любой сложности</span>
+          </div>
+        </div>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26Z"/></svg>
+            <span>Фото</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-detail reveal" id="tig">
+        <div class="svc-detail-num">06</div>
+        <div class="svc-detail-body">
+          <div class="svc-detail-head">
+            <div class="svc-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22,4 12,14.01 9,11.01"/>
+              </svg>
+            </div>
+            <h3>Аргонодуговая сварка</h3>
+          </div>
+          <p>TIG-сварка алюминия, нержавейки, меди и титана. Чистый шов без пор и брызг. Идеально для тонколистового металла и деталей с высокими требованиями к внешнему виду.</p>
+          <div class="svc-tags">
+            <span class="svc-tag">Алюминий</span>
+            <span class="svc-tag">Нержавейка</span>
+            <span class="svc-tag">Медь / Титан</span>
+            <span class="svc-tag">TIG / Аргон</span>
+            <span class="svc-tag">Тонколистовой металл</span>
+          </div>
+        </div>
+        <div class="svc-detail-photo">
+          <div class="svc-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+            <span>Фото</span>
+          </div>
         </div>
       </div>
 
@@ -182,13 +242,32 @@
 <section class="section" style="padding-top:0">
   <div class="container">
     <div class="sec-head">
-      <div class="sec-meta"><span class="sec-num">02</span><span class="sec-tag">С чем работаем</span></div>
+      <div class="sec-meta">
+        <span class="sec-num">02</span>
+        <span class="sec-tag">С чем работаем</span>
+      </div>
     </div>
     <div class="mat-grid">
-      <div class="mat-item reveal"><span class="mat-icon">🔩</span><h4>Сталь</h4><p>Ст3, 08кп, 09Г2С, конструкционные марки</p></div>
-      <div class="mat-item reveal"><span class="mat-icon">✨</span><h4>Нержавейка</h4><p>AISI 304, 316L, 430, пищевые марки</p></div>
-      <div class="mat-item reveal"><span class="mat-icon">🪨</span><h4>Алюминий</h4><p>АМг, АД31, Д16Т, листы и профили</p></div>
-      <div class="mat-item reveal"><span class="mat-icon">🟠</span><h4>Медь и латунь</h4><p>М1, Л63 — для TIG-сварки и резки</p></div>
+      <div class="mat-card reveal">
+        <span class="mat-icon">🔩</span>
+        <h4>Сталь</h4>
+        <p>Ст3, 08кп, 09Г2С, конструкционные марки</p>
+      </div>
+      <div class="mat-card reveal">
+        <span class="mat-icon">✨</span>
+        <h4>Нержавейка</h4>
+        <p>AISI 304, 316L, 430, пищевые марки</p>
+      </div>
+      <div class="mat-card reveal">
+        <span class="mat-icon">🪨</span>
+        <h4>Алюминий</h4>
+        <p>АМг, АД31, Д16Т, листы и профили</p>
+      </div>
+      <div class="mat-card reveal">
+        <span class="mat-icon">🟠</span>
+        <h4>Медь и латунь</h4>
+        <p>М1, Л63 — для TIG-сварки и резки</p>
+      </div>
     </div>
   </div>
 </section>
@@ -197,21 +276,46 @@
 <section class="section" style="padding-top:0">
   <div class="container">
     <div class="sec-head">
-      <div class="sec-meta"><span class="sec-num">03</span><span class="sec-tag">Как мы работаем</span></div>
-    </div>
-    <div class="process-steps">
-      <div class="proc-step reveal"><div class="proc-n">01</div><h4>Заявка</h4><p>Пришлите чертёж или опишите задачу в форме или мессенджере.</p></div>
-      <div class="proc-step reveal"><div class="proc-n">02</div><h4>Расчёт</h4><p>Считаем стоимость и сроки. Ответ за 1 рабочий день.</p></div>
-      <div class="proc-step reveal"><div class="proc-n">03</div><h4>Договор</h4><p>Согласуем технические требования, подписываем договор.</p></div>
-      <div class="proc-step reveal"><div class="proc-n">04</div><h4>Производство</h4><p>Изготовление с контролем качества на каждом этапе.</p></div>
-      <div class="proc-step reveal"><div class="proc-n">05</div><h4>Доставка</h4><p>Самовывоз или отправка транспортной компанией по России.</p></div>
-    </div>
-    <div class="svc-cta-bar">
-      <div>
-        <h3>Нужен расчёт?<br/>Пришлите чертёж</h3>
-        <p>Ответим в течение 1 рабочего дня</p>
+      <div class="sec-meta">
+        <span class="sec-num">03</span>
+        <span class="sec-tag">Как мы работаем</span>
       </div>
-      <a href="contact.html" class="btn-dark">Оставить заявку →</a>
+    </div>
+    <div class="process-row">
+      <div class="proc-step reveal">
+        <div class="proc-n">01</div>
+        <h4>Заявка</h4>
+        <p>Пришлите чертёж или опишите задачу в форме или мессенджере.</p>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-n">02</div>
+        <h4>Расчёт</h4>
+        <p>Считаем стоимость и сроки. Ответ за 1 рабочий день.</p>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-n">03</div>
+        <h4>Договор</h4>
+        <p>Согласуем технические требования, подписываем договор.</p>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-n">04</div>
+        <h4>Производство</h4>
+        <p>Изготовление с контролем качества на каждом этапе.</p>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-n">05</div>
+        <h4>Доставка</h4>
+        <p>Самовывоз или отправка транспортной компанией по России.</p>
+      </div>
+    </div>
+
+    <div class="svc-cta-block" style="margin-top: 2px;">
+      <h2>Нужен расчёт?<br/><em>Пришлите чертёж</em></h2>
+      <p>Ответим в течение 1 рабочего дня</p>
+      <div class="svc-cta-actions">
+        <a href="contact.html" class="btn-solid">Оставить заявку →</a>
+        <a href="works.html"   class="btn-outline">Примеры работ →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -233,16 +337,30 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-    <img src="logo.png" alt="СТАРТ" class="logo-img"/>
-  </a>
+          <img src="logo.png" alt="СТАРТ" class="logo-img"/>
+        </a>
         <p>Производство металлических деталей под заказ. Лазерная резка, гибка, сварка, порошковая покраска и сборка.</p>
       </div>
-      <div class="footer-col"><h5>Навигация</h5><ul><li><a href="../index.html">Главная</a></li><li><a href="services.html">Услуги</a></li><li><a href="contact.html">Контакты</a></li><li><a href="https://www.ozon.ru" target="_blank">Магазин Ozon</a></li></ul></div>
-      <div class="footer-col"><h5>Контакты</h5><ul><li><span>+7 (000) 000-00-00</span></li><li><span>info@meridian.ru</span></li><li><span>Пн–Пт: 9:00–18:00</span></li></ul></div>
+      <div class="footer-col">
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="works.html">Примеры работ</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Контакты</h5>
+        <ul>
+          <li><span>+7 (000) 000-00-00</span></li>
+          <li><span>info@meridian.ru</span></li>
+          <li><span>Пн–Пт: 9:00–18:00</span></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2024 СТАРТ. Все права защищены.</p>
-      <a href="https://www.ozon.ru" target="_blank" rel="noopener" class="footer-ozon">Мы на Ozon →</a>
     </div>
   </div>
 </footer>
