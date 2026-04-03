@@ -8,14 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="base.css"/>
   <link rel="stylesheet" href="works.css"/>
+  <!-- model-viewer от Google: рендерит .glb в браузере, вращение мышью/пальцем -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body>
 <div class="noise"></div>
 
 <nav class="nav" id="nav">
-  <a href="index.html" class="logo">
-    <img src="logo.png" alt="СТАРТ" class="logo-img"/>
-  </a>
+  <a href="index.html" class="logo"><img src="logo.png" alt="СТАРТ" class="logo-img"/></a>
   <ul class="nav-links">
     <li><a href="index.html"    class="nav-link">Главная</a></li>
     <li><a href="services.html" class="nav-link">Услуги</a></li>
@@ -46,10 +46,7 @@
       <span class="breadcrumb-sep">/</span>
       <span class="bc-active">Примеры работ</span>
     </div>
-    <h1 class="inner-hero-title">
-      Примеры
-      <em>наших работ</em>
-    </h1>
+    <h1 class="inner-hero-title">Примеры<em>наших работ</em></h1>
   </div>
 </section>
 
@@ -58,92 +55,115 @@
     <div class="sec-head">
       <div class="sec-meta">
         <span class="sec-num">01</span>
-        <span class="sec-tag">3D-модели деталей</span>
+        <span class="sec-tag">Детали и изделия</span>
       </div>
+      <p class="works-hint">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3l14 9-7 1-3 7z"/></svg>
+        Нажмите на карточку — откроется 3D-модель
+      </p>
     </div>
 
     <div class="works-grid">
 
-      <div class="work-card reveal">
+      <div class="work-card reveal" data-model="models/model-1.glb" data-title="Почтовый ящик"  >
         <div class="work-img-wrap">
-          <img src="models/model-1.png" alt="Кронштейн монтажный" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
-          <div class="work-tag">Лазерная резка</div>
+          <video src="models/Ящик.mp4" alt="Почтовый ящик" loading="lazy" autoplay muted loop></video>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
+          
         </div>
-        <div class="work-info">
-          <h3>Кронштейн монтажный</h3>
-          <p>Сталь 3 мм, лазерная резка по DXF-чертежу</p>
-        </div>
+        <div class="work-info"><h3>Почтовый ящик</h3><p></p></div>
       </div>
 
-      <div class="work-card reveal">
+      
+      <div class="work-card reveal" data-model="models/model-2.glb" data-title="Верстак" >
         <div class="work-img-wrap">
-          <img src="models/model-2.png" alt="П-образный профиль" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
-          <div class="work-tag">Гибка</div>
+          <video src="models/Верстак.mp4" alt="Верстак" loading="lazy" autoplay muted loop></video>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
         </div>
-        <div class="work-info">
-          <h3>П-образный профиль</h3>
-          <p>Нержавейка 2 мм, гибка на прессе 2400 мм</p>
-        </div>
+        <div class="work-info"><h3>Верстак</h3><p></p></div>
       </div>
 
-      <div class="work-card reveal">
+      <div class="work-card reveal" data-model="models/model-3.glb" data-title="Скамья" >
         <div class="work-img-wrap">
-          <img src="models/model-3.png" alt="Рамная конструкция" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
-          <div class="work-tag">Сварка TIG</div>
+          <video src="models/Скамья.mp4" loading="lazy" autoplay muted loop playsinline></video>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
         </div>
-        <div class="work-info">
-          <h3>Рамная конструкция</h3>
-          <p>Алюминий АМг3, аргонодуговая сварка</p>
-        </div>
+        <div class="work-info"><h3>Скамья</h3></div>
       </div>
 
-      <div class="work-card reveal">
+      <div class="work-card reveal" data-model="models/model-4.glb" data-title="Ящик инструментальный" >
         <div class="work-img-wrap">
-          <img src="models/model-4.png" alt="Корпус металлический" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
-          <div class="work-tag">Порошковая покраска</div>
+          <video src="models/Ящик инструментальный.mp4" alt="Ящик инструментальный" loading="lazy" autoplay muted loop></video>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
         </div>
-        <div class="work-info">
-          <h3>Корпус металлический</h3>
-          <p>Сталь + RAL 7016 антрацит, матовая фактура</p>
-        </div>
+        <div class="work-info"><h3>Ящик инструментальный</h3></div>
       </div>
 
-      <div class="work-card reveal">
+      <!--<div class="work-card reveal" data-model="models/model-5.glb" data-title="Несущая рама" data-desc="Профильная труба 60×60×3, MIG/MAG сварка" data-tag="Сварка MIG/MAG">
         <div class="work-img-wrap">
           <img src="models/model-5.png" alt="Несущая рама" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
           <div class="work-tag">Сварка MIG/MAG</div>
         </div>
-        <div class="work-info">
-          <h3>Несущая рама</h3>
-          <p>Профильная труба 60×60×3, MIG/MAG сварка</p>
-        </div>
+        <div class="work-info"><h3>Несущая рама</h3><p>Профильная труба 60×60×3, MIG/MAG сварка</p></div>
       </div>
 
-      <div class="work-card reveal">
+      <div class="work-card reveal" data-model="models/model-6.glb" data-title="Узел в сборе" data-desc="Резка + гибка + сварка + покраска" data-tag="Комплексный заказ">
         <div class="work-img-wrap">
           <img src="models/model-6.png" alt="Узел в сборе" loading="lazy"/>
-          <div class="work-overlay"><span class="work-zoom">↗</span></div>
+          <div class="work-overlay"><span class="work-3d-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>3D</span></div>
           <div class="work-tag">Комплексный заказ</div>
         </div>
-        <div class="work-info">
-          <h3>Узел в сборе</h3>
-          <p>Резка + гибка + сварка + покраска</p>
-        </div>
-      </div>
+        <div class="work-info"><h3>Узел в сборе</h3><p>Резка + гибка + сварка + покраска</p></div>
+      </div>можно добавить больше карточек, просто скопировав блок и поменяв данные-model, title, desc, tag и изображение -->
 
     </div>
   </div>
 </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">✕</button>
-  <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+<!-- ─── 3D MODAL ─────────────────────────────── -->
+<div class="modal3d" id="modal3d" role="dialog" aria-modal="true">
+  <div class="modal3d-backdrop" id="modal3dBackdrop"></div>
+  <div class="modal3d-inner">
+
+    <div class="modal3d-head">
+      <div class="modal3d-meta">
+        <span class="modal3d-tag" id="modal3dTag"></span>
+        <h2 class="modal3d-title" id="modal3dTitle"></h2>
+        <p class="modal3d-desc" id="modal3dDesc"></p>
+      </div>
+      <button class="modal3d-close" id="modal3dClose" aria-label="Закрыть">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="2" y1="2" x2="16" y2="16"/>
+          <line x1="16" y1="2" x2="2" y2="16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal3d-viewer-wrap">
+      <model-viewer
+        id="modelViewer"
+        src="models/model-1.glb"
+        camera-controls
+        auto-rotate
+        style="width:898px;height:520px;display:block;"
+      >
+        <div class="modal3d-progress-wrap" slot="progress-bar">
+          <div class="modal3d-progress-bar" id="modal3dProgress"></div>
+        </div>
+      </model-viewer> 
+
+      <div class="modal3d-hint" id="modal3dHint">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        Перетащите для вращения · Прокрутите для зума
+      </div>
+    </div>
+
+    <div class="modal3d-foot">
+      <a href="contact.html" class="btn-solid">Заказать такую деталь →</a>
+    </div>
+
+  </div>
 </div>
 
 <section class="marquee-cta">
@@ -165,9 +185,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo">
-          <img src="logo.png" alt="СТАРТ" class="logo-img"/>
-        </a>
+        <a href="index.html" class="logo"><img src="logo.png" alt="СТАРТ" class="logo-img"/></a>
         <p>Производство металлических деталей под заказ. Лазерная резка, гибка, сварка, порошковая покраска и сборка.</p>
       </div>
       <div class="footer-col">
@@ -183,7 +201,7 @@
         <h5>Контакты</h5>
         <ul>
           <li><span>+7 (000) 000-00-00</span></li>
-          <li><span>info@meridian.ru</span></li>
+          <li><span>info@start.ru</span></li>
           <li><span>Пн–Пт: 9:00–18:00</span></li>
         </ul>
       </div>
@@ -195,5 +213,84 @@
 </footer>
 
 <script src="main.js"></script>
+<script>
+(function () {
+  const modal    = document.getElementById('modal3d');
+  const backdrop = document.getElementById('modal3dBackdrop');
+  const viewer   = document.getElementById('modelViewer');
+  const closeBtn = document.getElementById('modal3dClose');
+  const tagEl    = document.getElementById('modal3dTag');
+  const titleEl  = document.getElementById('modal3dTitle');
+  const descEl   = document.getElementById('modal3dDesc');
+  const hint     = document.getElementById('modal3dHint');
+  const bar      = document.getElementById('modal3dProgress');
+
+  /* Открыть */
+  document.querySelectorAll('.work-card[data-model]').forEach(card => {
+    card.addEventListener('click', () => {
+      // Сбросить состояние перед загрузкой новой модели
+      bar.style.width   = '0%';
+      bar.style.opacity = '1';
+      hint.style.opacity = '0';
+
+      tagEl.textContent   = card.dataset.tag   || '';
+      titleEl.textContent = card.dataset.title || '';
+      descEl.textContent  = card.dataset.desc  || '';
+
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+
+      // Установить src в конце, после открытия модалки
+      setTimeout(() => {
+        viewer.src = card.dataset.model;
+      }, 100);
+    });
+  });
+
+  /* Прогресс загрузки */
+  viewer.addEventListener('load', () => {
+    console.log('model-viewer loaded:', viewer.src);
+  });
+
+  viewer.addEventListener('error', e => {
+    console.error('model-viewer error', e);
+  });
+
+  viewer.addEventListener('progress', e => {
+    const pct = (e.detail.totalProgress * 100).toFixed(0);
+    bar.style.width = pct + '%';
+    if (+pct >= 100) {
+      setTimeout(() => { bar.style.opacity = '0'; }, 500);
+      setTimeout(() => { hint.style.opacity = '1'; }, 700);
+    }
+  });
+
+  /* Закрыть */
+  function close3d() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    console.log('close button clicked');
+    close3d();
+  });
+  backdrop.addEventListener('click', e => {
+    e.stopPropagation();
+    close3d();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      close3d();
+    }
+  });
+
+  /* Скрыть подсказку при первом взаимодействии */
+  viewer.addEventListener('camera-change', () => {
+    hint.style.opacity = '0';
+  }, { once: true });
+})();
+</script>
 </body>
 </html>

@@ -35,7 +35,7 @@
 .contact-row-icon {
   width: 36px; height: 36px;
   background: var(--accent-dim);
-  border: 1px solid rgba(212,146,42,0.2);
+  border: 1px solid rgba(91,138,245,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
